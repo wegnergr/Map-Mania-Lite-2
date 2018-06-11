@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<!--
+  Author:  Greg Wegner  
+  Class:   Web and Distributed programming
+  Session: Fall 2018
+  Description: Map Mania Lite v2
+  logging - browser-open console-3 dots-more tools-console to watch logs
+-->
+  <head>
+    <meta charset="utf-8">
+    <title>Map Mania Lite</title>
+    <link rel="stylesheet" href="map-mania-lite.css">
+    <script src="map-mania-lite.js"></script>
+  </head>
+
+  <!-- Couldn't get the to work on the bottom so did it differently - used marque wanted to do an  -- extra feature -->
+  <marquee behavior="alternate" direction="right">This is going to be fun. Maybe sombeody else would like to try after you?</marquee> 
+
+  <body onload="initApplication()">
+      <h1>Greg &amp; Arlene's &quot;Eight &quot; Favorite Places to Visit Game - Map Mania Lite, it's a lot of fun!</h1>
+       Hint: <input id="hint-id" type="text" value="" size="150" disabled><br><br>
+       Score: <input id="score-id" type="text" value="" size="2" disabled><br><br>
+       
+       <title> Visibility control </title>
+       <form action = "">
+         <div id = "hideorunhide" style = "position: relative;
+             visibility: visible;">
+           <img src = "StartupPage.jpg"
+             alt = "(Pictures of Saturn)" />
+         </div>
+         <p>
+           <br />
+           <input type = "button" value = "Toggle hide or unhide the Startup Page"
+                         onclick = "flipimag()" /> 
+         </p>
+       </form>
+
+       <script type="text/javascript">
+       function flipimag() {
+           dom = document.getElementById("hideorunhide").style;
+       
+           //Flip the visibility flag to what it is not now.
+           if (dom.visibility == "visible")
+              dom.visibility = "hidden";
+           else
+              dom.visibility = "visible";  
+           }   
+       </script>
+
+
+       <div id="myMapID"></div>
+
+       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUhfkL9e8guPs3FulSFqnfX5hosuJF0_8&callback=initMap"
+           async defer>
+       </script>
+
+<!-- <input type="button" value="Want to just use the Cheatsheet" onclick="cheatsheet"();"/>
+      // <img id="loadingImage" src="Cheatsheet.jpg" style="visibility:hidden"/>
+
+<!--<title> Moving text example as a fun new feature  - couldnt get it to work, went to an alternative</title>
+    <style type = "text/css">
+      #theText {position: absolute; left: 100px; top: 100px;
+                    font: bold 1.7em 'Times Roman';
+                    color: blue;"> That was fun do you want to play again?;}
+    </style>
+    <script type = "text/javascript"  src = "moveText.js">
+    </script>
+
+<!-- Call the initializing function on load, giving the 
+      destination coordinates for the text to be moved
+      -->
+
+ <!--<body.onload = "initText()" -->
+
+<!-- The text to be moved 
+    <p>
+      <span id = 'theText'> That was fun do you want to play again?
+     </span>
+    </p> -->
+
+
+  
+    
+    
+
+  </body>
+</html>

@@ -1,0 +1,55 @@
+/* 
+	 
+	 <!--Greg Wegner  Web and Distributed programming-->
+     <!--Assignment 4, Summer 2018-->
+     <!--Map Mania Lite v2-->
+*/
+/*my code*/
+h1 {
+    color: blue;
+}
+p {
+    color: red;
+}
+body {
+    background-color: powderblue;
+}
+h2 {
+    color: blue;
+}
+p {
+    color: red;
+}
+body {
+    background-color: powderblue;
+}
+h3 {
+    color: blue;
+}
+p {
+    color: red;
+}
+body {
+    background-color: powderblue;
+}
+h4 {
+    color: black;
+}
+p {
+    color: red;
+}
+/*
+        Always set the map height explicitly to define the size of the div element that contains
+        the map. Note that some of the tutorials re-used "map" too many times. Confusing: 
+    */
+    #myMapID {
+        height: 100%;
+        width: 100%;
+    }
+        /*
+        Optional: Makes the sample page fill the window. Fill all of window. */
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
